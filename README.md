@@ -1,2 +1,2 @@
-# CtrlNLG Workshop
+# LLMAgents Workshop
  
