@@ -54,14 +54,25 @@
   }
 </style>
 
-    <!-- <style type="text/css">
-    .tg  {border-collapse:collapse;border-spacing:0;}
-    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-      overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-    </style> -->
+    <style>
+  /* CSS for coloring schedule rows */
+  .morning-session {
+    background-color: #fff4d5; /* Light yellow for morning sessions */
+  }
+
+  .afternoon-session {
+    background-color: #dbe7f2; /* Light blue for afternoon sessions */
+  }
+
+  .evening-session {
+    background-color: #e9daeb; /* Light purple for evening sessions */
+  }
+
+  .night-session {
+    background-color: #f9f0ed; /* Light purple for evening sessions */
+  }
+
+</style>
 
   </head>
 
@@ -400,28 +411,28 @@
                             </thead>
                             <tbody>
                               <!-- Opening Remarks -->
-                              <tr>
+                              <tr class="morning-session">
                                 <td>9:00 AM - 9:10 AM</td>
                                 <td>Opening Remarks</td>
                                 <td>10 min</td>
                                 <td>Welcome and Introduction to the Workshop</td>
                               </tr>
                               <!-- Invited Talk 1 -->
-                              <tr>
+                              <tr class="morning-session">
                                 <td>9:10 AM - 9:40 AM</td>
                                 <td>Invited Talk #1</td>
                                 <td>30 min</td>
                                 <td>First invited talk</td>
                               </tr>
                               <!-- Spotlight Presentation 1 -->
-                              <tr>
+                              <tr class="morning-session"> 
                                 <td>9:40 AM - 9:55 AM</td>
                                 <td>Spotlight Presentation #1</td>
                                 <td>12 mins</td>
                                 <td>First spotlight presentation</td>
                               </tr>
                               <!-- Invited Talk 2 -->
-                              <tr>
+                              <tr class="morning-session">
                                 <td>10:00 AM - 10:30 AM</td>
                                 <td>Invited Talk #2</td>
                                 <td>30 min</td>
@@ -435,21 +446,21 @@
                                 <td>Networking and refreshments</td>
                               </tr>
                               <!-- Invited Talk 3 -->
-                              <tr>
+                              <tr class="afternoon-session">
                                 <td>10:50 AM - 11:18 AM</td>
                                 <td>Invited Talk #3</td>
                                 <td>30 min</td>
                                 <td>Third invited talk</td>
                               </tr>
                               <!-- Spotlight Presentation 2 -->
-                              <tr>
+                              <tr class="afternoon-session">
                                 <td>11:18 AM - 11:30 AM</td>
                                 <td>Spotlight Presentation #2</td>
                                 <td>12 mins</td>
                                 <td>Second spotlight presentation</td>
-                              </tr>
+                              </tr >
                               <!-- Poster Session 1 -->
-                              <tr>
+                              <tr class="afternoon-session">
                                 <td>11:30 AM - 12:30 PM</td>
                                 <td>Poster Session I</td>
                                 <td>60 min</td>
@@ -464,35 +475,35 @@
                                 <td>Time for lunch and informal discussions</td>
                               </tr>
                               <!-- Invited Talk 4 -->
-                              <tr>
+                              <tr class="evening-session">
                                 <td>1:30 PM - 2:00 PM</td>
                                 <td>Invited Talk #4</td>
                                 <td>30 min</td>
                                 <td>Fourth invited talk</td>
                               </tr>
                               <!-- Spotlight Presentation 3 -->
-                              <tr>
+                              <tr class="evening-session">
                                 <td>2:00 PM - 2:12 PM</td>
                                 <td>Spotlight Presentation #3</td>
                                 <td>12 mins</td>
                                 <td>Third spotlight presentation</td>
                               </tr>
                               <!-- Invited Talk 5 -->
-                              <tr>
+                              <tr class="evening-session" >
                                 <td>2:12 PM - 2:42 PM</td>
                                 <td>Invited Talk #5</td>
                                 <td>30 min</td>
                                 <td>Fifth invited talk</td>
                               </tr>
                               <!-- Invited Talk 6 -->
-                              <tr>
+                              <tr class="evening-session" >
                                 <td>2:42 PM - 3:12 PM</td>
                                 <td>Invited Talk #6</td>
                                 <td>30 min</td>
                                 <td>Sixth invited talk</td>
                               </tr>
                               <!-- Panel Discussion -->
-                              <tr>
+                              <tr class="evening-session">
                                 <td>3:12 PM - 3:42 PM</td>
                                 <td>Panel Discussion</td>
                                 <td>30 min</td>
@@ -506,14 +517,14 @@
                                 <td>Networking and refreshments</td>
                               </tr>
                               <!-- Closing Remarks -->
-                              <tr>
+                              <tr class="night-session">
                                 <td>4:00 PM - 4:05 PM</td>
                                 <td>Closing Remarks</td>
                                 <td>5 min</td>
                                 <td>Concluding the workshop</td>
                               </tr>
                               <!-- Poster Session 2 -->
-                              <tr>
+                              <tr class="night-session">
                                 <td>4:05 PM - 5:05 PM</td>
                                 <td>Poster Session II</td>
                                 <td>60 min</td>
@@ -782,7 +793,6 @@
 
               </section><!-- End Organization Section -->
 
-              
               <!-- ======= PC Member List Section ======= -->
               <section id="pc-members" class="pc-members">
                 <div class="container">
@@ -851,7 +861,6 @@
                 </div>
 
               </section><!-- End Contact Section -->
-
 
               <!-- ======= Contact Section ======= -->
               <!-- <section id="sponsors" class="sponsors">
